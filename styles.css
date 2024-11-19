@@ -17,15 +17,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #333;
+    background-color: #677a63;
 }
 
 .navbar .logo-img {
-    width: 100px; 
+    width: 100px;
     height: auto;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
-} 
+}
 
 .navbar .menu-icon {
     display: none;
@@ -50,27 +50,7 @@ body {
     font-size: 18px;
 }
 
-/* Submenú */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-}
-
-.nav-links li:hover .submenu {
-    display: block;
-}
-
-.submenu li {
-    padding: 8px 15px;
-}
-
-/* Imagen */
+/* Imagen responsive */
 .image-container {
     text-align: center;
     margin-top: 15px;
@@ -79,28 +59,75 @@ body {
 }
 
 .responsive-img {
-    width: 20rem;
+    /* width: 100%; */
     height: 20rem;
-    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
 }
 
-
-.titulo{
+/* Títulos */
+.titulo {
     margin-top: 2rem;
+    text-align: center;
 }
 
-h2{
+h2 {
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-p{
+p {
     margin-bottom: 10px;
     color: black;
-     font-size: 16px; 
+    font-size: 16px;
+}
+
+/* Estilos de las secciones */
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #99A87D;
+    flex-wrap: wrap;  
+}
+
+.invertido {
+    flex-direction: row-reverse;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;  
+}
+
+.imagenContaminacion {
+    width: 50%;  
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.informacion {
+    width: 50%;  
+    padding: 20px;
+    background-color: #EAF4DB;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 16px;
+    color: black;
 }
 
 /* Medios de Pantalla */
@@ -125,56 +152,28 @@ p{
     .menu-icon {
         display: block;
     }
+
+    /* Ajustes para las secciones en pantallas pequeñas */
+    .contenedor {
+        flex-direction: column;  
+        width: 100%;
+    }
+
+    .imagenContaminacion {
+        width: 100%;  
+        height: 12rem;
+    }
+
+    .informacion {
+        width: 100%;  
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
-
- 
-
-
-.seccion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    background-color: #99A87D;
-    /* margin-bottom: 30px; */
-}
-
-.invertido {
-    flex-direction: row-reverse;  
-}
-
-.contenedor {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 1200px;
-}
-
-.imagen {
-    width: 45%;
-    height: auto;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-}
-
-
-.imagenContaminacion{
-   width: 20rem;
-    height: 20rem;
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    
-}
-
-.informacion {
-    width: 50%;
-    padding: 0 20px;
-    background-color: #EAF4DB;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-}
- 
