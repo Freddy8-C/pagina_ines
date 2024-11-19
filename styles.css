@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #99A87D;
+    color: white;
+}
+
+/* Estilos del menú de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+}
+
+.navbar .logo-img {
+    width: 100px; 
+    height: auto;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+} 
+
+.navbar .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Enlaces del menú */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.nav-links li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 8px 15px;
+}
+
+/* Imagen */
+.image-container {
+    text-align: center;
+    margin-top: 15px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.responsive-img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.titulo{
+    margin-top: 2rem;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+p{
+    margin-bottom: 10px;
+    color: black;
+     font-size: 16px; 
+}
+
+/* Medios de Pantalla */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+ 
+
+
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #99A87D;
+    /* margin-bottom: 30px; */
+}
+
+.invertido {
+    flex-direction: row-reverse;  
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.imagen {
+    width: 45%;
+    height: auto;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+
+.imagenContaminacion{
+   width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.informacion {
+    width: 50%;
+    padding: 0 20px;
+    background-color: #EAF4DB;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+ 
